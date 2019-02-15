@@ -1,0 +1,363 @@
+- name: Go
+
+- name: Old Kent Rd
+  price: 0.6
+  rent:
+   property: 2
+   housePrices:
+     - 10
+     - 30
+     - 90
+     - 160
+   hotel: 250
+  type: property
+  mortgage_value: 30
+  house_cost: 50
+
+- name: Community Chest
+
+- name: Whitechapel Rd
+  price: 0.6
+  rent:
+   property: 2
+   housePrices:
+     - 20
+     - 60
+     - 180
+     - 320
+   hotel: 450
+  type: property
+  mortgage_value: 30
+  house_cost: 50
+
+- name: Income Tax
+  cost: 2
+  type: tax
+
+- name: Kings Cross
+  price: 2
+  type: station
+  mortgage_value: 100
+
+- name: The Angel Islington
+  price: 1
+  rent:
+   property: 6
+   housePrices:
+     - 30
+     - 90
+     - 270
+     - 400
+   hotel: 55
+  type: property
+  mortgage_value: 50
+  house_cost: 50
+
+- name: Chance
+
+- name: Euston Rd
+  price: 1.0
+  rent:
+   property: 6
+   housePrices:
+     - 30
+     - 90
+     - 270
+     - 400
+   hotel: 550
+  type: property
+  mortgage_value: 50
+  house_cost: 50
+
+- name: Pentonville Rd
+  price: 1.2
+  rent:
+   property: 8
+   housePrices:
+     - 40
+     - 100
+     - 300
+     - 450
+   hotel: 600
+  type: property
+  mortgage_value: 60
+  house_cost: 100
+
+- name: Jail
+
+- name: Pall Mall
+  price: 1.4
+  rent:
+   property: 10
+   housePrices:
+     - 50
+     - 150
+     - 450
+     - 625
+   hotel: 750
+  type: property
+  mortgage_value: 70
+  house_cost: 100
+
+- name: Electric Company
+  price: 1.5
+  type: utility
+  mortgage_value: 75
+
+- name: Whitehall
+  price: 1.4
+  rent:
+   property: 10
+   housePrices:
+     - 50
+     - 150
+     - 450
+     - 625
+   hotel: 750
+  type: property
+  mortgage_value: 70
+  house_cost: 100
+
+- name: Northumberland Ave
+  price: 1.6
+  rent:
+   property: 12
+   housePrices:
+     - 60
+     - 180
+     - 500
+     - 700
+   hotel: 900
+  type: property
+  mortgage_value: 80
+  house_cost: 100
+
+- name: Marylebone
+  price: 2.0
+  type: station
+  mortgage_value: 100
+
+- name: Bow St
+  price: 1.6
+  rent:
+   property: 14
+   housePrices:
+     - 70
+     - 200
+     - 550
+     - 750
+   hotel: 950
+  type: property
+  mortgage_value: 90
+  house_cost: 100
+
+- name: Community Chest
+
+- name: Marlborough St
+  price: 1.8
+  rent:
+   property: 14
+   housePrices:
+     - 70
+     - 200
+     - 550
+     - 750
+   hotel: 950
+  type: property
+  mortgage_value: 90
+  house_cost: 100
+
+- name: Vine St
+  price: 2.0
+  rent:
+   property: 16
+   housePrices:
+     - 80
+     - 220
+     - 600
+     - 800
+   hotel: 1000
+  type: property
+  mortgage_value: 100
+  house_cost: 100
+
+- name: Free Parking
+
+- name: The Strand
+  price: 2.2
+  rent:
+   property: 18
+   housePrices:
+     - 90
+     - 250
+     - 700
+     - 875
+   hotel: 1050
+  type: property
+  mortgage_value: 110
+  house_cost: 150
+
+- name: Chance
+
+- name: Fleet St
+  price: 2.2
+  rent:
+   property: 18
+   housePrices:
+     - 90
+     - 250
+     - 700
+     - 875
+   hotel: 1050
+  type: property
+  mortgage_value: 110
+  house_cost: 150
+
+- name: Trafalgar Sq
+  price: 2.4
+  rent:
+   property: 20
+   housePrices:
+     - 100
+     - 300
+     - 750
+     - 925
+   hotel: 1100
+  type: property
+  mortgage_value: 120
+  house_cost: 150
+
+- name: Fenchurch St
+  price: 2.0
+  type: station
+  mortgage_value: 100
+
+- name: Leicester Sq
+  price: 2.6
+  rent:
+   property: 22
+   housePrices:
+     - 110
+     - 330
+     - 800
+     - 975
+   hotel: 1150
+  type: property
+  mortgage_value: 130
+  house_cost: 150
+
+- name: Coventry St
+  price: 2.6
+  rent:
+   property: 22
+   housePrices:
+     - 110
+     - 330
+     - 800
+     - 975
+   hotel: 1150
+  type: property
+  mortgage_value: 130
+  house_cost: 150
+
+- name: Water Works
+  price: 1.5
+  type: utility
+  mortgage_value: 75
+
+- name: Piccadilly
+  price: 2.8
+  rent:
+   property: 24
+   housePrices:
+     - 120
+     - 360
+     - 850
+     - 1025
+   hotel: 1200
+  type: property
+  mortgage_value: 140
+  house_cost: 150
+
+- name: "Go To Jail"
+
+- name: Regent St
+  price: 3.0
+  rent:
+   property: 26
+   housePrices:
+     - 130
+     - 390
+     - 900
+     - 1100
+   hotel: 1275
+  type: property
+  mortgage_value: 150
+  house_cost: 200
+
+- name: Oxford St
+  price: 3.0
+  rent:
+   property: 26
+   housePrices:
+     - 130
+     - 390
+     - 900
+     - 1100
+   hotel: 1275
+  type: property
+  mortgage_value: 150
+  house_cost: 200
+
+- name: Community Chest
+
+- name: Bond St
+  price: 3.2
+  rent:
+   property: 28
+   housePrices:
+     - 150
+     - 450
+     - 1000
+     - 1200
+   hotel: 1400
+  type: property
+  mortgage_value: 160
+  house_cost: 200
+
+- name: Liverpool St
+  price: 2.0
+  type: station
+  mortgage_value: 100
+
+- name: Park Lane
+  price: 3.5
+  rent:
+   property: 35
+   housePrices:
+     - 175
+     - 500
+     - 1100
+     - 1300
+   hotel: 1500
+  type: property
+  mortgage_value: 175
+  house_cost: 200
+
+- name: Super Tax
+  type: tax
+  cost: 1.0
+
+- name: Mayfair
+  price: 4.0
+  rent:
+   property: 50
+   housePrices:
+     - 200
+     - 600
+     - 1400
+     - 1700
+   hotel: 2000
+  type: property
+  mortgage_value: 200
+  house_cost: 200
