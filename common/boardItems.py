@@ -1,9 +1,19 @@
+from util import Colour
+
 class Tile(object):
     def __init__(self, name):
         self.name = name
 
     def get_actions_for(self, player):
         raise NotImplementedError
+
+    def format_coloured_name(self):
+        try:
+            return Colour[self.colourname] + self.name + Colour['END']
+        except KeyError:
+            return self.name
+        except AttributeError:
+            return self.name
 
 class OwnableTile(Tile):
 
@@ -15,14 +25,17 @@ class OwnableTile(Tile):
         self._rent = tiledata.get("rent")
         self.mortgage_value = tiledata.get('mortgage_value')
         self.tiledata = tiledata
+        self.colourname = tiledata.get("colour")
+
 
     def get_price(self, tiledata):
         return tiledata.get("price") * tiledata.get("config")["basePrice"]
 
+
     def get_actions_for(self, player):
         actions = []
 
-        if self.owned_by is None:
+        if self.owned_by is None and player.can_buy_property(self):
             actions.append("Buy")
 
         if self.owned_by is not None:
@@ -78,13 +91,25 @@ class Property(OwnableTile):
         return self.owned_by.money >= self.house_price
 
     def build_house(self):
-        self._houses += 1
-        self.owned_by.money -= self.house_price
+        if self._houses == 4:
+            print "Could not build any more houses on this property"
+
+        elif self.owned_by.money < self.house_price:
+            print "Not enough money to build :("
+        else:
+            self._houses += 1
+            self.owned_by.money -= self.house_price
 
     def build_hotel(self):
-        self._houses = 0
-        self.hotel = True
-        self.owned_by.money -= self.house_price
+        if self._houses != 4:
+            print "Not enough houses on this property to build hotel!"
+
+        elif self.owned_by.money < self.house_price:
+            print "Not enough money to build :("
+        else:
+            self._houses = 0
+            self.hotel = True
+            self.owned_by.money -= self.house_price
 
 class Station(OwnableTile):
 
@@ -118,7 +143,7 @@ class Tax(Tile):
         self.cost = tiledata.get("cost")
 
     def get_actions_for(self, player):
-        return "Pay Tax"
+        return ["Pay Tax"]
 
     def get_tax(self, player):
         if "Super Tax" == self.name:
@@ -148,7 +173,10 @@ class Jail(Tile):
         super(Jail, self).__init__("Jail")
 
     def get_actions_for(self, player):
-        return ["Spend turn in jail", "Use get out of jail card"]
+        if player.in_jail:
+            return ["Spend turn in jail", "Use get out of jail card"]
+        else:
+            return []
 
 class FreeParking(Tile):
     def __init__(self):
@@ -159,7 +187,7 @@ class GoToJail(Tile):
         super(GoToJail, self).__init__("Go To Jail")
 
     def get_actions_for(self, player):
-        return "Go to jail"
+        return ["Go to jail"]
 
 class CommunityChest(Tile):
     def __init__(self):

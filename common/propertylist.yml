@@ -13,6 +13,7 @@
   type: property
   mortgage_value: 30
   house_cost: 50
+  colour: BROWN
 
 - name: Community Chest
 
@@ -29,6 +30,7 @@
   type: property
   mortgage_value: 30
   house_cost: 50
+  colour: BROWN
 
 - name: Income Tax
   cost: 2
@@ -52,6 +54,7 @@
   type: property
   mortgage_value: 50
   house_cost: 50
+  colour: CYAN
 
 - name: Chance
 
@@ -68,6 +71,7 @@
   type: property
   mortgage_value: 50
   house_cost: 50
+  colour: CYAN
 
 - name: Pentonville Rd
   price: 1.2
@@ -82,6 +86,7 @@
   type: property
   mortgage_value: 60
   house_cost: 100
+  colour: CYAN
 
 - name: Jail
 
@@ -98,6 +103,7 @@
   type: property
   mortgage_value: 70
   house_cost: 100
+  colour: PURPLE
 
 - name: Electric Company
   price: 1.5
@@ -117,6 +123,7 @@
   type: property
   mortgage_value: 70
   house_cost: 100
+  colour: PURPLE
 
 - name: Northumberland Ave
   price: 1.6
@@ -131,6 +138,7 @@
   type: property
   mortgage_value: 80
   house_cost: 100
+  colour: PURPLE
 
 - name: Marylebone
   price: 2.0
@@ -150,6 +158,7 @@
   type: property
   mortgage_value: 90
   house_cost: 100
+  colour: ORANGE
 
 - name: Community Chest
 
@@ -166,6 +175,7 @@
   type: property
   mortgage_value: 90
   house_cost: 100
+  colour: ORANGE
 
 - name: Vine St
   price: 2.0
@@ -180,6 +190,7 @@
   type: property
   mortgage_value: 100
   house_cost: 100
+  colour: ORANGE
 
 - name: Free Parking
 
@@ -196,6 +207,7 @@
   type: property
   mortgage_value: 110
   house_cost: 150
+  colour: RED
 
 - name: Chance
 
@@ -212,6 +224,7 @@
   type: property
   mortgage_value: 110
   house_cost: 150
+  colour: RED
 
 - name: Trafalgar Sq
   price: 2.4
@@ -226,6 +239,7 @@
   type: property
   mortgage_value: 120
   house_cost: 150
+  colour: RED
 
 - name: Fenchurch St
   price: 2.0
@@ -245,6 +259,7 @@
   type: property
   mortgage_value: 130
   house_cost: 150
+  colour: YELLOW
 
 - name: Coventry St
   price: 2.6
@@ -259,6 +274,7 @@
   type: property
   mortgage_value: 130
   house_cost: 150
+  colour: YELLOW
 
 - name: Water Works
   price: 1.5
@@ -278,6 +294,7 @@
   type: property
   mortgage_value: 140
   house_cost: 150
+  colour: YELLOW
 
 - name: "Go To Jail"
 
@@ -294,6 +311,7 @@
   type: property
   mortgage_value: 150
   house_cost: 200
+  colour: GREEN
 
 - name: Oxford St
   price: 3.0
@@ -308,6 +326,7 @@
   type: property
   mortgage_value: 150
   house_cost: 200
+  colour: GREEN
 
 - name: Community Chest
 
@@ -324,6 +343,7 @@
   type: property
   mortgage_value: 160
   house_cost: 200
+  colour: GREEN
 
 - name: Liverpool St
   price: 2.0
@@ -343,6 +363,7 @@
   type: property
   mortgage_value: 175
   house_cost: 200
+  colour: BLUE
 
 - name: Super Tax
   type: tax
@@ -361,3 +382,4 @@
   type: property
   mortgage_value: 200
   house_cost: 200
+  colour: BLUE

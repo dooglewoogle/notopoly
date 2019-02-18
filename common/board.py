@@ -70,11 +70,13 @@ class Board(object):
             print p
             self._player_locations.setdefault(p.name, 0)
 
+    def get_player_position(self, player):
+        playerloc = self._player_locations[player.name]
+        return self.gametiles[playerloc]
 
     def advance_player(self, player, amount):
 
         playerloc = self._player_locations[player.name]
-
         playerloc += amount
         if playerloc >= len(self.gametiles):
             playerloc -= len(self.gametiles)
@@ -88,7 +90,7 @@ class Board(object):
             playerloc = 10
             player.send_to_jail()
 
-        print "Player %s has advanced to %s" % (player.name, self.gametiles[playerloc].name)
+        print "Player %s has advanced to %s" % (player.name, self.gametiles[playerloc].format_coloured_name())
         self._player_locations[player.name] = playerloc
 
         return playerloc
